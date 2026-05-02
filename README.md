@@ -278,7 +278,7 @@ The materials and components for this project were selected based on simplicity,
 | Budget Item           | Estimated Cost              |
 | --------------------- | ---------------------------:|
 |  Webcam       |1000                     |
-|Raspberry Pi 4 Model B      | 6000                     |
+|Raspberry Pi 4 Model B      | 0                     |
 
 
 ## 9.5 Budget Reflection
@@ -306,7 +306,6 @@ Member 4: GitHub repository management, documentation updates, and debugging sup
 Decisions were taken through group discussions. Final decisions were made based on feasibility, performance, and project requirements after considering suggestions from all members.
 
 Progress was tracked regularly through:
-Weekly discussions
 Code execution and testing results
 Updates on GitHub repository
 If any task was delayed:
@@ -404,18 +403,14 @@ Final documentation was reviewed and refined collectively
 
 ## 13.1 Risk Register
 
-| Risk                                                                 | Type         | Likelihood | Impact   | Mitigation Plan                                                                                  | Owner            |
-|----------------------------------------------------------------------|--------------|------------|----------|--------------------------------------------------------------------------------------------------|------------------|
-| Poor lighting affects hand detection accuracy                        | `Technical`  | `High`     | `High`   | Use controlled lighting, adjust HSV thresholds, apply brightness/contrast correction             | `[Your Name]`    |
-| Skin color detection fails under different lighting conditions       | `Technical`  | `High`     | `High`   | Use adaptive thresholding, test under multiple lighting environments                             | `[Your Name]`    |
-| Background noise interferes with hand segmentation                   | `Technical`  | `Medium`   | `High`   | Use plain background, apply filtering (blur, erosion, dilation)                                  | `[Your Name]`    |
-| Incorrect gesture recognition (false positives)                      | `Technical`  | `High`     | `Medium` | Improve contour detection, convex hull analysis, fine-tune parameters                            | `[Your Name]`    |
-| Webcam not detected or fails during runtime                          | `Technical`  | `Medium`   | `High`   | Check drivers, test camera beforehand, keep backup webcam                                         | `[Your Name]`    |
-| Slow performance / lag on Raspberry Pi                               | `Technical`  | `Medium`   | `Medium` | Reduce frame size, optimize OpenCV processing, limit FPS                                          | `[Your Name]`    |
-| Hand not properly detected due to complex background                 | `Technical`  | `Medium`   | `Medium` | Ensure simple background during demo, use ROI (Region of Interest)                                | `[Your Name]`    |
-| Hardware issues (power supply, SD card failure)                      | `Hardware`   | `Low`      | `High`   | Use stable power supply, keep backup SD card                                                      | `[Your Name]`    |
-| Limited number of mudras supported                                   | `Scope`      | `Low`      | `Medium` | Clearly define supported mudras (e.g., Gyan, Anjali, Chin)                                        | `[Your Name]`    |
-
+| Risk                                                       | Type         | Likelihood | Impact   | Mitigation Plan                                                                 | Owner         |
+|------------------------------------------------------------|--------------|------------|----------|----------------------------------------------------------------------------------|---------------|
+| Poor lighting affects hand detection accuracy              | `Technical`  | `High`     | `High`   | Use controlled lighting and adjust HSV thresholds                               | `[Your Name]` |
+| Skin color detection varies with environment               | `Technical`  | `High`     | `High`   | Test under different lighting and fine-tune segmentation                        | `[Your Name]` |
+| Background noise affects hand segmentation                 | `Technical`  | `Medium`   | `High`   | Use plain background and apply filtering techniques                             | `[Your Name]` |
+| Incorrect gesture recognition (false positives)            | `Technical`  | `High`     | `Medium` | Improve contour and convex hull logic                                           | `[Your Name]` |
+| Slow performance on Raspberry Pi                           | `Technical`  | `Medium`   | `Medium` | Reduce frame size and optimize processing                                       | `[Your Name]` |
+| Limited number of mudras supported                         | `Scope`      | `Low`      | `Medium` | Focus on key mudras and expand if time permits                                  | `[Your Name]` |
 
 ## 13.2 Biggest Unknown Right Now
 
@@ -474,8 +469,8 @@ Suggested images:
 - mechanism test,
 - app screenshot,
 - final build.
-- <img width="960" height="1280" alt="WhatsApp Image 2026-04-24 at 9 46 02 AM (1)" src="https://github.com/user-attachments/assets/74baa570-5770-483e-be6d-d2f03386e37c" />
 
+<img src="images/components.jpeg">
 
 
 
